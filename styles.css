@@ -37,7 +37,7 @@
 }
 
 #mainContainer > div > h1 {
-  font-size: 2.5em;
+  font-size: 3vw;
   font-family: "Open Sans", sans-serif;
   color: white;
 }
@@ -61,8 +61,9 @@
 }
 
 #statusContainer {
+  width: 89%;
   display: flex;
-  gap: 3rem;
+  justify-content: space-between;
   font-family: "Open Sans", sans-serif;
 }
 #companies {
@@ -81,11 +82,67 @@
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1048px) {
   #detailPage {
     width: 80vw;
-    height: 60vh;
+    height: 90vh;
     background-color: #1c1938;
     display: flex;
+    flex-direction: column-reverse;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+  }
+
+  #mainImg {
+    width: 100%;
+    height: 30%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  #detailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  #mainContainer {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    gap: 5vh;
+    justify-content: start;
+  }
+  #mainContainer > div > h1 {
+    font-size: 3.5vh;
+    text-align: center;
+  }
+
+  #detailContainer > p {
+    font-size: 1.75vh;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    text-align: center;
+    line-height: 3vh;
+    letter-spacing: 0.95px;
+  }
+  #statusContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+  #companies {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  #companies > h2 {
+    font-size: 3.5vh;
+    text-align: center;
+  }
+  #companies > p {
+    font-size: 1.75vh;
+    color: rgba(255, 255, 255, 0.747);
+    text-align: center;
   }
 }
