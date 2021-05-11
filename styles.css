@@ -37,7 +37,7 @@
 }
 
 #mainContainer > div > h1 {
-  font-size: 3.35rem;
+  font-size: 2.5em;
   font-family: "Open Sans", sans-serif;
   color: white;
 }
@@ -48,10 +48,10 @@
 #detailContainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1em;
 }
 #detailContainer > p {
-  font-size: 1.35rem;
+  font-size: 1em;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: white;
@@ -72,11 +72,11 @@
 }
 
 #companies > h2 {
-  font-size: 2.35rem;
+  font-size: 2.2em;
   color: white;
 }
 #companies > p {
-  font-size: 1.15rem;
+  font-size: 1em;
   color: rgba(255, 255, 255, 0.527);
   text-transform: uppercase;
 }
