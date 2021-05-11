@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#mainPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a0c1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#detailPage {
+  width: 80vw;
+  height: 60vh;
+  background-color: #1c1938;
+  display: flex;
+  justify-content: flex-end;
+}
+#mainImg {
+  width: 50%;
+  height: auto;
+  background: linear-gradient(rgba(79, 6, 124, 0.6), rgba(79, 6, 124, 0.6)),
+    url("./Asset/stats-preview-card-component-main/images/image-header-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainContainer {
+  width: 40%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#mainContainer > div > h1 {
+  font-size: 3.35rem;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+#mainContainer > div > h1 > span {
+  color: #ac59d9;
+}
+#detailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#detailContainer > p {
+  font-size: 1.35rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  width: 89%;
+  line-height: 1.5rem;
+  letter-spacing: 0.85px;
+}
+
+#statusContainer {
+  display: flex;
+  gap: 3rem;
+  font-family: "Open Sans", sans-serif;
+}
+#companies {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#companies > h2 {
+  font-size: 2.35rem;
+  color: white;
+}
+#companies > p {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.527);
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  #detailPage {
+    width: 80vw;
+    height: 60vh;
+    background-color: #1c1938;
+    display: flex;
+  }
+}
